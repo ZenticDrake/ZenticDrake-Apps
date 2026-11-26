@@ -118,7 +118,6 @@
         <!-- Brand Logo -->
         <a href="#inicio" class="flex items-center gap-3 group focus:outline-none">
           <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-zd-surface border border-zd-border/80 flex items-center justify-center group-hover:border-zd-cyan/60 transition-colors">
-            <!-- Custom Minimalist Glowing Dragon SVG -->
             <svg class="w-7 h-7 dragon-glow" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="dragonGradNav" x1="15" y1="15" x2="85" y2="85" gradientUnits="userSpaceOnUse">
@@ -127,15 +126,10 @@
                   <stop offset="100%" stop-color="#2979FF" />
                 </linearGradient>
               </defs>
-              <!-- Horn & Head Silhouette -->
               <path d="M40 16 C45 24, 55 26, 68 27 C76 28, 82 34, 82 40 C82 45, 76 47, 73 47 C77 50, 77 56, 70 57 C62 58, 55 52, 48 52 C41 52, 38 45, 43 38 C46 33, 41 26, 38 19 Z" stroke="url(#dragonGradNav)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <!-- Neck Inner Line -->
               <path d="M35 33 C24 44, 24 62, 38 72 C48 79, 58 82, 62 90" stroke="url(#dragonGradNav)" stroke-width="4.5" stroke-linecap="round"/>
-              <!-- Neck Outer Curve -->
               <path d="M45 55 C39 63, 45 71, 55 76 C65 81, 69 85, 71 91" stroke="url(#dragonGradNav)" stroke-width="4.5" stroke-linecap="round"/>
-              <!-- Lower Wave Accent -->
               <path d="M22 89 C27 79, 36 81, 43 87 C48 91, 53 91, 57 88" stroke="url(#dragonGradNav)" stroke-width="4.5" stroke-linecap="round"/>
-              <!-- Glowing Cyan Eye -->
               <circle cx="64" cy="37" r="3.2" fill="#00E5FF" class="dragon-eye-glow"/>
             </svg>
           </div>
@@ -157,16 +151,11 @@
 
         <!-- Action Buttons -->
         <div class="flex items-center gap-2 sm:gap-3">
-          <button onclick="openDevModal()" title="Modo Creador: Agregar o personalizar apps" class="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium bg-zd-surface hover:bg-zd-card text-zd-cyan border border-zd-cyan/30 hover:border-zd-cyan transition-all">
-            <i class="fa-solid fa-code"></i>
-            <span class="hidden sm:inline">Panel Dev</span>
-          </button>
-          <a href="#aplicaciones" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-zd-cyan to-zd-blue text-zd-bg hover:shadow-cyan-glow transition-all">
+          <a href="#aplicaciones" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-zd-cyan to-zd-blue text-zd-bg hover:shadow-cyan-glow transition-all">
             <i class="fa-solid fa-download"></i>
             <span>Descargar Apps</span>
           </a>
-          <!-- Mobile Menu Button -->
-          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-xl bg-zd-surface border border-zd-border text-zd-silver hover:text-zd-cyan">
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Abrir menú" class="md:hidden p-2.5 rounded-xl bg-zd-surface border border-zd-border text-zd-silver hover:text-zd-cyan">
             <i class="fa-solid fa-bars text-base"></i>
           </button>
         </div>
@@ -191,7 +180,7 @@
         <div class="lg:col-span-7 text-center lg:text-left space-y-6">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zd-surface/90 border border-zd-cyan/30 text-xs font-medium text-zd-cyan shadow-cyan-glow">
             <span class="w-2 h-2 rounded-full bg-zd-cyan animate-ping"></span>
-            <span>Estudio Independiente de Software • Cuba 🇨🇺</span>
+            <span>Estudio Independiente de Software • Cuba</span>
           </div>
 
           <p class="text-base sm:text-lg text-zd-muted max-w-2xl mx-auto lg:mx-0 leading-relaxed">
@@ -212,12 +201,12 @@
           <!-- Quick Stats -->
           <div class="grid grid-cols-3 gap-4 pt-6 max-w-md mx-auto lg:mx-0 border-t border-zd-border/60">
             <div>
-              <div id="statTotalApps" class="text-2xl font-bold text-white">6</div>
+              <div id="statTotalApps" class="text-2xl font-bold text-white">0</div>
               <div class="text-xs text-zd-muted">Apps Publicadas</div>
             </div>
             <div>
-              <div id="statTotalDownloads" class="text-2xl font-bold text-zd-cyan">2.4k+</div>
-              <div class="text-xs text-zd-muted">Descargas Totales</div>
+              <div class="text-2xl font-bold text-zd-cyan">GitHub</div>
+              <div class="text-xs text-zd-muted">Releases Oficiales</div>
             </div>
             <div>
               <div class="text-2xl font-bold text-white">100%</div>
@@ -229,16 +218,13 @@
         <!-- Hero Right Emblem Showcase -->
         <div class="lg:col-span-5 flex justify-center">
           <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-3xl bg-gradient-to-b from-zd-surface to-zd-bg border border-zd-border/80 flex flex-col items-center justify-center p-8 shadow-2xl">
-            <!-- Decorative corner accents -->
             <div class="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-zd-cyan/50 rounded-tl-md"></div>
             <div class="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-zd-cyan/50 rounded-tr-md"></div>
             <div class="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-zd-blue/50 rounded-bl-md"></div>
             <div class="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-zd-blue/50 rounded-br-md"></div>
 
-            <!-- Glowing Radial Backdrop -->
             <div class="absolute inset-8 bg-gradient-to-tr from-zd-blue/20 via-zd-cyan/15 to-transparent rounded-full blur-2xl"></div>
 
-            <!-- Main ZenticDrake Hero SVG Logo -->
             <svg class="w-40 h-40 sm:w-48 sm:h-48 dragon-glow relative z-10" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="heroDragonGrad" x1="20" y1="15" x2="100" y2="105" gradientUnits="userSpaceOnUse">
@@ -247,15 +233,10 @@
                   <stop offset="100%" stop-color="#2979FF" />
                 </linearGradient>
               </defs>
-              <!-- Stylized Single-Line Dragon Head & Horn -->
               <path d="M48 18 C54 27, 66 30, 81 31 C90 32, 97 39, 97 46 C97 52, 90 55, 86 55 C91 58, 91 66, 83 67 C74 68, 66 61, 57 61 C49 61, 45 52, 51 44 C55 38, 49 30, 45 21 Z" stroke="url(#heroDragonGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <!-- Outer Neck Curve -->
               <path d="M41 38 C28 51, 28 73, 45 85 C57 93, 69 97, 74 106" stroke="url(#heroDragonGrad)" stroke-width="4.5" stroke-linecap="round"/>
-              <!-- Inner Neck Curve -->
               <path d="M53 65 C46 74, 53 84, 65 90 C77 96, 82 101, 85 108" stroke="url(#heroDragonGrad)" stroke-width="4.5" stroke-linecap="round"/>
-              <!-- Base Energy Wave -->
               <path d="M26 105 C32 93, 43 96, 51 103 C57 108, 63 108, 68 104" stroke="url(#heroDragonGrad)" stroke-width="4.5" stroke-linecap="round"/>
-              <!-- Glowing Cyan Eye -->
               <circle cx="76" cy="43" r="3.8" fill="#00E5FF" class="dragon-eye-glow"/>
             </svg>
 
@@ -281,18 +262,12 @@
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <div>
-          <span class="text-xs font-mono uppercase tracking-widest text-zd-cyan">// Repositorio de Software</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-zd-cyan">// Repositorio en GitHub</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Nuestras Aplicaciones</h2>
           <p class="text-zd-muted text-sm sm:text-base mt-2 max-w-2xl">
-            Descarga directamente las últimas versiones compiladas. Cada aplicación incluye verificación de integridad y registro de cambios.
+            Descarga las versiones publicadas desde GitHub. Cada aplicación incluye detalles técnicos y registro de cambios.
           </p>
         </div>
-
-        <!-- Add App Shortcut -->
-        <button onclick="openDevModal()" class="self-start md:self-auto inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold bg-zd-card hover:bg-zd-surface text-zd-cyan border border-zd-cyan/40 transition-all">
-          <i class="fa-solid fa-plus"></i>
-          <span>Publicar Nueva App</span>
-        </button>
       </div>
 
       <!-- Filter Tabs & Search Bar -->
@@ -326,25 +301,16 @@
         </div>
       </div>
 
-      <!-- Info Banner about Sample Apps -->
-      <div class="mb-8 px-4 py-3 rounded-xl bg-zd-blue/10 border border-zd-blue/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-zd-silver">
-        <div class="flex items-center gap-2.5">
-          <i id="backendStatusIcon" class="fa-solid fa-server text-zd-cyan text-sm"></i>
-          <span id="backendStatusText">Conectando con el servidor Flask de <strong>ZenticDrake</strong>...</span>
-        </div>
-        <button id="restoreDemoBtn" onclick="resetDemoApps()" class="hidden text-zd-cyan hover:underline font-medium self-end sm:self-auto">Restaurar ejemplos locales</button>
-      </div>
-
       <!-- Apps Grid -->
       <div id="appsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- App Cards will be dynamically injected here -->
       </div>
 
       <!-- Empty State -->
-      <div id="emptyState" class="hidden text-center py-16 bg-zd-surface/40 rounded-2xl border border-zd-border/60">
-        <i class="fa-solid fa-dragon text-4xl text-zd-muted/50 mb-3"></i>
-        <h3 class="text-lg font-semibold text-white">No se encontraron aplicaciones</h3>
-        <p class="text-sm text-zd-muted mt-1">Prueba con otro término de búsqueda o cambia el filtro de categoría.</p>
+      <div id="emptyState" class="text-center py-16 bg-zd-surface/40 rounded-2xl border border-zd-border/60">
+        <i class="fa-solid fa-dragon text-4xl text-zd-cyan/60 mb-3"></i>
+        <h3 id="emptyStateTitle" class="text-lg font-semibold text-white">Próximamente nuevas aplicaciones</h3>
+        <p id="emptyStateDesc" class="text-sm text-zd-muted mt-1 max-w-md mx-auto">Aún no hay aplicaciones publicadas en esta sección. Muy pronto estarán disponibles las primeras versiones oficiales desde GitHub.</p>
       </div>
 
     </div>
@@ -370,19 +336,11 @@
               <strong class="text-white">ZenticDrake</strong> es una marca dedicada al desarrollo de aplicaciones digitales, creada para reunir y dar identidad propia a mis proyectos de software. Con la energía y el carácter de un dragón sumados a una estética moderna y minimalista, cada aplicación busca ofrecer soluciones ágiles, intuitivas y bien construidas.
             </p>
             <p>
-              Detrás de este proyecto está <span id="creatorNameDisplay" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-zd-cyan/15 text-zd-cyan font-semibold border border-zd-cyan/30 cursor-pointer hover:bg-zd-cyan/25 transition-colors" onclick="openCreatorModal()" title="Haz clic para editar tu nombre">[Tu Nombre]</span>, un joven <strong class="text-white">cubano de 19 años</strong> y <strong class="text-white">aficionado a la programación</strong> que decidió transformar su curiosidad, esfuerzo y pasión por el código en aplicaciones reales al alcance de todos.
+              Detrás de este proyecto está <strong class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-zd-cyan/15 text-zd-cyan font-semibold border border-zd-cyan/30">Loan Carlos García Cruz</strong>, un joven <strong class="text-white">cubano de 19 años</strong> y <strong class="text-white">aficionado a la programación</strong> que decidió transformar su curiosidad, esfuerzo y pasión por el código en aplicaciones reales al alcance de todos.
             </p>
             <p class="text-zd-muted text-sm">
               Lo que empezó experimentando línea por línea hoy toma forma como un estudio independiente en constante evolución, donde cada versión publicada representa un nuevo paso de aprendizaje y mejora continua.
             </p>
-          </div>
-
-          <!-- Quick Edit Creator Name Button -->
-          <div class="pt-2">
-            <button onclick="openCreatorModal()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-medium bg-zd-card hover:bg-zd-bg text-zd-cyan border border-zd-border hover:border-zd-cyan/50 transition-all">
-              <i class="fa-solid fa-pen-to-square"></i>
-              <span>Personalizar mi nombre de creador</span>
-            </button>
           </div>
         </div>
 
@@ -448,15 +406,11 @@
             ¿Encontraste un error en alguna aplicación, tienes una idea para una nueva herramienta o quieres colaborar en un proyecto? Escríbeme directamente.
           </p>
 
-          <!-- Social & Community Links -->
+          <!-- Direct Email Contact -->
           <div class="flex flex-wrap gap-3 pt-2">
-            <a href="https://t.me" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-zd-surface hover:bg-zd-card border border-zd-border hover:border-zd-cyan/50 text-xs font-medium text-zd-silver hover:text-zd-cyan transition-all">
-              <i class="fa-brands fa-telegram text-base"></i>
-              <span>Telegram</span>
-            </a>
-            <a href="mailto:contacto@zenticdrake.dev" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-zd-surface hover:bg-zd-card border border-zd-border hover:border-zd-cyan/50 text-xs font-medium text-zd-silver hover:text-zd-cyan transition-all">
+            <a href="mailto:ZenticDrake@gmail.com" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-zd-surface hover:bg-zd-card border border-zd-border hover:border-zd-cyan/50 text-xs font-medium text-zd-silver hover:text-zd-cyan transition-all">
               <i class="fa-solid fa-envelope text-base"></i>
-              <span>Email</span>
+              <span>ZenticDrake@gmail.com</span>
             </a>
           </div>
         </div>
@@ -497,7 +451,7 @@
 
       <!-- Bottom Copyright -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zd-muted">
-        <p>© <span id="currentYear"></span> <strong class="text-white">ZenticDrake</strong> Digital Applications. Todos los derechos reservados.</p>
+        <p>© <span id="currentYear"></span> <strong class="text-white">ZenticDrake</strong> Digital Applications — Loan Carlos García Cruz. Todos los derechos reservados.</p>
         <p class="flex items-center gap-1.5">
           <span>Desarrollado con pasión desde Cuba</span>
           <span class="text-zd-cyan">•</span>
@@ -523,8 +477,8 @@
         <i id="dlIcon" class="fa-solid fa-cloud-arrow-down animate-bounce"></i>
       </div>
       <div>
-        <span class="text-[11px] font-mono uppercase tracking-widest text-zd-cyan">Servidor Seguro ZenticDrake</span>
-        <h3 id="dlAppName" class="text-xl font-bold text-white mt-1">Descargando App...</h3>
+        <span class="text-[11px] font-mono uppercase tracking-widest text-zd-cyan">Repositorio ZenticDrake • GitHub</span>
+        <h3 id="dlAppName" class="text-xl font-bold text-white mt-1">Preparando descarga...</h3>
         <p id="dlFileMeta" class="text-xs text-zd-muted mt-1">Archivo • Versión • Tamaño</p>
       </div>
 
@@ -534,122 +488,23 @@
           <div id="dlProgressBar" class="h-full bg-gradient-to-r from-zd-cyan to-zd-blue w-0 transition-all duration-200"></div>
         </div>
         <div class="flex justify-between text-xs font-mono text-zd-muted">
-          <span id="dlStatusText">Iniciando paquete...</span>
+          <span id="dlStatusText">Verificando enlace...</span>
           <span id="dlPercentText" class="text-zd-cyan">0%</span>
         </div>
       </div>
 
       <!-- SHA-256 Badge -->
-      <div class="p-3 rounded-xl bg-zd-bg border border-zd-border/80 text-left">
+      <div id="dlHashBox" class="hidden p-3 rounded-xl bg-zd-bg border border-zd-border/80 text-left">
         <div class="flex items-center justify-between text-[11px] text-emerald-400 font-medium mb-1">
-          <span><i class="fa-solid fa-shield-halved mr-1"></i>Verificado sin malware (SHA-256)</span>
+          <span><i class="fa-solid fa-shield-halved mr-1"></i>Verificación SHA-256</span>
           <button onclick="copyHash()" class="text-zd-cyan hover:underline">Copiar hash</button>
         </div>
-        <code id="dlHashText" class="block text-[10px] font-mono text-zd-muted truncate">8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4</code>
+        <code id="dlHashText" class="block text-[10px] font-mono text-zd-muted truncate"></code>
       </div>
 
       <button id="dlCloseBtn" onclick="closeDownloadModal()" class="w-full py-2.5 rounded-xl text-xs font-semibold bg-zd-card hover:bg-zd-border text-white transition-colors">
         Cerrar ventana
       </button>
-    </div>
-  </div>
-
-  <!-- ==================== MODAL: DEVELOPER PANEL (ADD APP) ==================== -->
-  <div id="devModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-    <div class="bg-zd-surface border border-zd-border rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl">
-      <div class="flex items-center justify-between pb-4 border-b border-zd-border">
-        <div>
-          <span class="text-xs font-mono text-zd-cyan">// Modo Creador ZenticDrake</span>
-          <h3 class="text-xl font-bold text-white">Publicar Nueva Aplicación</h3>
-        </div>
-        <button onclick="closeDevModal()" class="p-2 rounded-xl text-zd-muted hover:text-white hover:bg-zd-card">
-          <i class="fa-solid fa-xmark text-lg"></i>
-        </button>
-      </div>
-
-      <form onsubmit="handleAddNewApp(event)" class="space-y-4 mt-5">
-        <div>
-          <label class="block text-xs font-medium text-zd-muted mb-1">Contraseña de Administrador (X-Admin-Password) *</label>
-          <input type="password" id="devAdminPassword" required placeholder="Ingresa tu clave de servidor" class="w-full px-3.5 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white" />
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs font-medium text-zd-muted mb-1">Nombre de la App *</label>
-            <input type="text" id="newAppTitle" required placeholder="Ej. DrakeNotes Pro" class="w-full px-3.5 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white" />
-          </div>
-          <div>
-            <label class="block text-xs font-medium text-zd-muted mb-1">Versión *</label>
-            <input type="text" id="newAppVersion" required placeholder="Ej. v1.0.0" value="v1.0.0" class="w-full px-3.5 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white" />
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div>
-            <label class="block text-xs font-medium text-zd-muted mb-1">Categoría *</label>
-            <select id="newAppCategory" class="w-full px-3 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white">
-              <option value="Móvil">Móvil</option>
-              <option value="Web">Web</option>
-              <option value="Desktop">Desktop</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs font-medium text-zd-muted mb-1">Plataforma *</label>
-            <input type="text" id="newAppPlatform" required placeholder="Ej. Android APK" value="Android APK" class="w-full px-3.5 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white" />
-          </div>
-          <div>
-            <label class="block text-xs font-medium text-zd-muted mb-1">Tamaño (si usas enlace)</label>
-            <input type="text" id="newAppSize" placeholder="Ej. 14.2 MB" value="14.2 MB" class="w-full px-3.5 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white" />
-          </div>
-        </div>
-
-        <div class="p-4 rounded-2xl bg-zd-bg/80 border border-zd-border/90 space-y-3">
-          <div>
-            <label class="block text-xs font-medium text-zd-cyan mb-1">Subir Archivo de App (.apk, .exe, .zip, etc.)</label>
-            <input type="file" id="newAppFile" accept=".apk,.exe,.msi,.zip,.rar,.dmg,.deb,.appimage,.tar,.gz" class="block w-full text-xs text-zd-silver file:mr-3 file:py-2 file:px-3.5 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-zd-cyan/15 file:text-zd-cyan hover:file:bg-zd-cyan/25 cursor-pointer" />
-          </div>
-          <div class="text-[11px] text-zd-muted text-center">— O bien —</div>
-          <div>
-            <label class="block text-xs font-medium text-zd-muted mb-1">Enlace de Descarga Externo</label>
-            <input type="url" id="newAppUrl" placeholder="https://github.com/tu-usuario/tu-app/releases/..." class="w-full px-3.5 py-2.5 rounded-xl bg-zd-surface border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white" />
-          </div>
-        </div>
-
-        <div>
-          <label class="block text-xs font-medium text-zd-muted mb-1">Descripción corta *</label>
-          <textarea id="newAppDesc" required rows="2" placeholder="Describe qué hace tu aplicación y qué problema resuelve..." class="w-full px-3.5 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white"></textarea>
-        </div>
-
-        <div>
-          <label class="block text-xs font-medium text-zd-muted mb-1">Requisitos del sistema</label>
-          <input type="text" id="newAppRequirements" placeholder="Ej. Android 8.0+ o Windows 10/11 (64-bit)" class="w-full px-3.5 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white" />
-        </div>
-
-        <div>
-          <label class="block text-xs font-medium text-zd-muted mb-1">Características o cambios (uno por línea o separados por coma)</label>
-          <textarea id="newAppFeatures" rows="2" placeholder="Modo oscuro nativo, Sin anuncios, Funciona offline" class="w-full px-3.5 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white"></textarea>
-        </div>
-
-        <div class="flex items-center justify-end gap-3 pt-3 border-t border-zd-border">
-          <button type="button" onclick="closeDevModal()" class="px-4 py-2.5 rounded-xl text-xs font-medium text-zd-muted hover:text-white">Cancelar</button>
-          <button type="submit" id="devSubmitBtn" class="px-6 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-zd-cyan to-zd-blue text-zd-bg hover:shadow-cyan-glow">
-            Guardar y Publicar App
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- ==================== MODAL: EDIT CREATOR NAME ==================== -->
-  <div id="creatorModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-    <div class="bg-zd-surface border border-zd-border rounded-3xl max-w-md w-full p-6 shadow-2xl space-y-4">
-      <h3 class="text-lg font-bold text-white">Personalizar Nombre del Fundador</h3>
-      <p class="text-xs text-zd-muted">Escribe tu nombre o alias de desarrollador para actualizar la sección "Sobre Mí".</p>
-      <input type="text" id="creatorNameInput" placeholder="Ej. Alejandro Gómez" class="w-full px-3.5 py-2.5 rounded-xl bg-zd-bg border border-zd-border focus:border-zd-cyan focus:outline-none text-sm text-white" />
-      <div class="flex justify-end gap-2 pt-2">
-        <button onclick="closeCreatorModal()" class="px-4 py-2 rounded-xl text-xs text-zd-muted hover:text-white">Cancelar</button>
-        <button onclick="saveCreatorName()" class="px-5 py-2 rounded-xl text-xs font-semibold bg-zd-cyan text-zd-bg">Guardar Nombre</button>
-      </div>
     </div>
   </div>
 
@@ -661,254 +516,42 @@
 
   <!-- ==================== JAVASCRIPT LOGIC ==================== -->
   <script>
-    // Default realistic sample applications for ZenticDrake
-    const defaultApps = [
-      {
-        id: 'drake-pulse',
-        title: 'DrakePulse Monitor',
-        version: 'v1.4.2',
-        category: 'Desktop',
-        platform: 'Windows / Linux',
-        size: '22.8 MB',
-        rating: '4.9',
-        downloads: 640,
-        icon: 'fa-microchip',
-        accent: 'from-cyan-400 to-blue-600',
-        isDemo: true,
-        downloadUrl: '',
-        shortDesc: 'Monitor ligero en tiempo real para CPU, memoria RAM, temperatura y velocidad de red con interfaz oscura minimalista.',
-        fullDesc: 'DrakePulse Monitor está diseñado para desarrolladores y usuarios que desean supervisar el rendimiento de su equipo sin consumir recursos innecesarios. Incluye alertas térmicas y exportación de métricas.',
-        features: [
-          'Consumo de memoria inferior a 18 MB en segundo plano',
-          'Gráficos en tiempo real a 60 FPS con paleta ZenticDrake',
-          'Widget flotante compacto siempre visible',
-          'Sin telemetría ni procesos ocultos'
-        ],
-        requirements: 'Windows 10/11 (64-bit) o Ubuntu 22.04+ • 50 MB de espacio libre',
-        changelog: 'v1.4.2: Optimización del lector de sensores de red y corrección menor en el modo compacto.'
-      },
-      {
-        id: 'zentic-vault',
-        title: 'ZenticVault Offline',
-        version: 'v2.1.0',
-        category: 'Móvil',
-        platform: 'Android APK',
-        size: '14.5 MB',
-        rating: '4.8',
-        downloads: 890,
-        icon: 'fa-shield-halved',
-        accent: 'from-sky-400 to-indigo-600',
-        isDemo: true,
-        downloadUrl: '',
-        shortDesc: 'Gestor de contraseñas y notas cifradas 100% offline con encriptación AES-256 y desbloqueo biométrico.',
-        fullDesc: 'Guarda tus credenciales, claves API y apuntes sensibles directamente en tu dispositivo sin depender de servidores externos. Tus datos nunca salen de tu teléfono.',
-        features: [
-          'Cifrado local AES-256-GCM de grado militar',
-          'Generador inteligente de contraseñas seguras',
-          'Copia de seguridad exportable en archivo cifrado',
-          'Funciona 100% sin conexión a Internet'
-        ],
-        requirements: 'Android 8.0 o superior • 30 MB de almacenamiento',
-        changelog: 'v2.1.0: Añadido soporte para etiquetas personalizadas y exportación rápida de respaldos.'
-      },
-      {
-        id: 'cuba-net-tools',
-        title: 'NetDrake Utilities',
-        version: 'v1.2.0',
-        category: 'Móvil',
-        platform: 'Android APK',
-        size: '11.2 MB',
-        rating: '4.9',
-        downloads: 520,
-        icon: 'fa-wifi',
-        accent: 'from-teal-400 to-cyan-600',
-        isDemo: true,
-        downloadUrl: '',
-        shortDesc: 'Suite portátil de diagnóstico de red: medidor de latencia (ping), escáner LAN, calculadora de subredes y control de datos.',
-        fullDesc: 'Pensada para diagnosticar conexiones móviles y redes locales al instante. Incluye herramientas esenciales de networking en una sola app rápida y sin publicidad.',
-        features: [
-          'Test de ping continuo y análisis de pérdida de paquetes',
-          'Escáner rápido de dispositivos conectados al Wi-Fi',
-          'Contador diario de consumo de datos móviles',
-          'Interfaz ultra limpia optimizada para pantallas OLED'
-        ],
-        requirements: 'Android 7.0 o superior • 25 MB de almacenamiento',
-        changelog: 'v1.2.0: Mejora en la precisión del escáner de puertos locales y nuevo tema azul profundo.'
-      },
-      {
-        id: 'code-snap-web',
-        title: 'DrakoSnippet Studio',
-        version: 'v1.0.5',
-        category: 'Web',
-        platform: 'Web App (PWA)',
-        size: '3.4 MB',
-        rating: '4.7',
-        downloads: 380,
-        icon: 'fa-terminal',
-        accent: 'from-blue-400 to-violet-600',
-        isDemo: true,
-        downloadUrl: '',
-        shortDesc: 'Convierte fragmentos de código en imágenes elegantes listas para compartir en redes sociales o documentación técnica.',
-        fullDesc: 'Una aplicación web progresiva instalable para crear capturas de código con resaltado de sintaxis profesional, sombras suaves y fondos personalizados.',
-        features: [
-          'Soporte para más de 25 lenguajes de programación',
-          'Exportación instantánea en PNG HD y SVG',
-          'Instalable como app de escritorio o móvil (PWA)',
-          'Atajos de teclado para flujo de trabajo rápido'
-        ],
-        requirements: 'Cualquier navegador moderno (Chrome, Edge, Firefox, Safari)',
-        changelog: 'v1.0.5: Agregados 4 temas oscuros nuevos y exportación con fondo transparente.'
-      }
-    ];
+    /**
+     * CATÁLOGO DE APLICACIONES DE ZENTICDRAKE (GITHUB RELEASES)
+     * Para publicar una aplicación nueva, agrega un objeto dentro de `apps` siguiendo este formato:
+     * {
+     *   id: 'mi-app',
+     *   title: 'Nombre de la App',
+     *   version: 'v1.0.0',
+     *   category: 'Móvil', // 'Móvil' | 'Web' | 'Desktop'
+     *   platform: 'Android APK',
+     *   size: '12.5 MB',
+     *   rating: '5.0',
+     *   icon: 'fa-mobile-screen-button',
+     *   accent: 'from-cyan-400 to-blue-600',
+     *   downloadUrl: 'https://github.com/usuario/repo/releases/download/v1.0.0/app.apk',
+     *   sha256: '', // Opcional: hash SHA-256 real del archivo
+     *   shortDesc: 'Descripción breve de la aplicación.',
+     *   fullDesc: 'Descripción completa para la ventana de detalles.',
+     *   features: ['Característica 1', 'Característica 2'],
+     *   requirements: 'Android 8.0 o superior',
+     *   changelog: 'v1.0.0: Lanzamiento inicial.'
+     * }
+     */
+    const apps = [];
 
-    // State management
-    let apps = [];
     let currentCategory = 'Todas';
     let currentHash = '';
-    let isBackendConnected = false;
+    let dlInterval = null;
 
-    // Normalize server or local app objects so both schemas work seamlessly
-    function normalizeApp(raw, index = 0) {
-      const platformRaw = raw.platform || 'Android APK';
-      let category = raw.category;
-      if (!category) {
-        const pLower = platformRaw.toLowerCase();
-        if (pLower.includes('web')) category = 'Web';
-        else if (pLower.includes('win') || pLower.includes('linux') || pLower.includes('mac') || pLower.includes('desktop')) category = 'Desktop';
-        else category = 'Móvil';
-      }
-
-      const iconMap = {
-        'Móvil': 'fa-mobile-screen-button',
-        'Web': 'fa-globe',
-        'Desktop': 'fa-laptop-code'
-      };
-
-      const desc = raw.description || raw.shortDesc || '';
-      const featuresList = Array.isArray(raw.features)
-        ? raw.features
-        : Array.isArray(raw.changelog)
-          ? raw.changelog
-          : ['Aplicación oficial de ZenticDrake'];
-
-      const changelogText = Array.isArray(raw.changelog)
-        ? raw.changelog.join(' • ')
-        : (raw.changelog || `${raw.version || 'v1.0.0'}: Publicación disponible.`);
-
-      return {
-        id: String(raw.id || `app-${index}`),
-        title: raw.title || raw.name || 'Aplicación sin título',
-        version: raw.version || 'v1.0.0',
-        category,
-        platform: platformRaw,
-        size: raw.size || 'Archivo',
-        rating: raw.rating || '5.0',
-        downloads: Number(raw.downloads) || 0,
-        icon: raw.icon || iconMap[category] || 'fa-dragon',
-        accent: raw.accent || 'from-zd-cyan to-zd-blue',
-        isDemo: Boolean(raw.isDemo),
-        downloadUrl: raw.downloadUrl || (raw.id ? `/download/${raw.id}` : ''),
-        sha256: raw.sha256 || '',
-        date: raw.date || '',
-        shortDesc: raw.shortDesc || desc,
-        fullDesc: raw.fullDesc || desc,
-        features: featuresList,
-        requirements: raw.requirements || `Compatible con ${platformRaw}`,
-        changelog: changelogText
-      };
-    }
-
-    function updateBackendStatusUI(connected) {
-      isBackendConnected = connected;
-      const iconEl = document.getElementById('backendStatusIcon');
-      const textEl = document.getElementById('backendStatusText');
-      const restoreBtn = document.getElementById('restoreDemoBtn');
-
-      if (connected) {
-        iconEl.className = 'fa-solid fa-circle-check text-emerald-400 text-sm';
-        textEl.innerHTML = 'Conectado en tiempo real al servidor <strong>ZenticDrake (Flask)</strong>. Las descargas y publicaciones se guardan en el servidor.';
-        restoreBtn.classList.add('hidden');
-      } else {
-        iconEl.className = 'fa-solid fa-circle-info text-amber-400 text-sm';
-        textEl.innerHTML = 'Modo local sin servidor activo: mostrando apps locales/demo. Inicia <code>python app.py</code> para usar <strong>/api/apps</strong> y subida real de archivos.';
-        restoreBtn.classList.remove('hidden');
-      }
-    }
-
-    async function fetchAppsFromBackend() {
-      try {
-        const res = await fetch('/api/apps', { cache: 'no-store' });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
-        const list = Array.isArray(data) ? data : (Array.isArray(data.apps) ? data.apps : []);
-        apps = list.map((item, idx) => normalizeApp(item, idx));
-        updateBackendStatusUI(true);
-        renderApps();
-        updateStats();
-        return true;
-      } catch (err) {
-        loadFallbackLocalApps();
-        updateBackendStatusUI(false);
-        renderApps();
-        updateStats();
-        return false;
-      }
-    }
-
-    function loadFallbackLocalApps() {
-      const savedApps = localStorage.getItem('zenticdrake_apps');
-      if (savedApps) {
-        try {
-          const parsed = JSON.parse(savedApps);
-          apps = parsed.map((item, idx) => normalizeApp(item, idx));
-          return;
-        } catch (e) {
-          // Fallback to defaults below
-        }
-      }
-      apps = defaultApps.map((item, idx) => normalizeApp(item, idx));
-    }
-
-    // Initialize on load
-    window.addEventListener('DOMContentLoaded', async () => {
+    window.addEventListener('DOMContentLoaded', () => {
       document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-      // Load saved creator name
-      const savedCreator = localStorage.getItem('zenticdrake_creator');
-      if (savedCreator) {
-        document.getElementById('creatorNameDisplay').textContent = savedCreator;
-      }
-
-      // Restore cached admin password if entered in this session
-      const savedPass = sessionStorage.getItem('zenticdrake_admin_pass');
-      if (savedPass) {
-        document.getElementById('devAdminPassword').value = savedPass;
-      }
-
-      loadFallbackLocalApps();
       renderApps();
       updateStats();
-      await fetchAppsFromBackend();
     });
-
-    function saveAppsToStorage() {
-      localStorage.setItem('zenticdrake_apps', JSON.stringify(apps));
-      updateStats();
-    }
-
-    function resetDemoApps() {
-      apps = defaultApps.map((item, idx) => normalizeApp(item, idx));
-      saveAppsToStorage();
-      renderApps();
-      showToast('Aplicaciones de ejemplo restauradas localmente.');
-    }
 
     function updateStats() {
       document.getElementById('statTotalApps').textContent = apps.length;
-      const totalDl = apps.reduce((acc, app) => acc + (Number(app.downloads) || 0), 0);
-      document.getElementById('statTotalDownloads').textContent = totalDl >= 1000 
-        ? (totalDl / 1000).toFixed(1) + 'k+' 
-        : totalDl;
     }
 
     function setCategory(cat) {
@@ -926,11 +569,13 @@
     function renderApps() {
       const grid = document.getElementById('appsGrid');
       const emptyState = document.getElementById('emptyState');
+      const emptyTitle = document.getElementById('emptyStateTitle');
+      const emptyDesc = document.getElementById('emptyStateDesc');
       const query = document.getElementById('searchInput').value.toLowerCase().trim();
 
       const filtered = apps.filter(app => {
         const matchesCat = currentCategory === 'Todas' || app.category === currentCategory;
-        const matchesQuery = 
+        const matchesQuery =
           app.title.toLowerCase().includes(query) ||
           app.shortDesc.toLowerCase().includes(query) ||
           app.platform.toLowerCase().includes(query);
@@ -939,17 +584,26 @@
 
       if (filtered.length === 0) {
         grid.innerHTML = '';
+        grid.classList.add('hidden');
         emptyState.classList.remove('hidden');
+
+        if (apps.length === 0) {
+          emptyTitle.textContent = 'Próximamente nuevas aplicaciones';
+          emptyDesc.textContent = 'Aún no hay aplicaciones publicadas en el catálogo. Muy pronto estarán disponibles las primeras versiones oficiales desde GitHub.';
+        } else {
+          emptyTitle.textContent = 'No se encontraron aplicaciones';
+          emptyDesc.textContent = 'Prueba con otro término de búsqueda o cambia el filtro de categoría.';
+        }
         return;
       }
 
       emptyState.classList.add('hidden');
+      grid.classList.remove('hidden');
       grid.innerHTML = filtered.map(app => `
         <article class="card-hover rounded-2xl bg-zd-card border border-zd-border/80 p-6 flex flex-col justify-between">
           <div>
-            <!-- Card Top: Icon + Badges -->
             <div class="flex items-start justify-between gap-4 mb-4">
-              <div class="w-13 h-13 w-12 h-12 rounded-2xl bg-gradient-to-br ${app.accent || 'from-zd-cyan to-zd-blue'} p-[1px] shrink-0">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br ${app.accent || 'from-zd-cyan to-zd-blue'} p-[1px] shrink-0">
                 <div class="w-full h-full rounded-2xl bg-zd-surface flex items-center justify-center text-zd-cyan text-xl">
                   <i class="fa-solid ${app.icon || 'fa-cube'}"></i>
                 </div>
@@ -958,11 +612,10 @@
                 <span class="px-2.5 py-1 rounded-lg bg-zd-bg border border-zd-border text-[11px] font-mono text-zd-cyan">
                   ${escapeHtml(app.version)}
                 </span>
-                ${app.isDemo ? `<span class="px-2 py-1 rounded-lg bg-amber-500/10 border border-amber-500/30 text-[10px] font-medium text-amber-300">Demo</span>` : `<span class="px-2 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-[10px] font-medium text-emerald-300">Oficial</span>`}
+                <span class="px-2 py-1 rounded-lg bg-zd-cyan/10 border border-zd-cyan/30 text-[10px] font-medium text-zd-cyan">GitHub</span>
               </div>
             </div>
 
-            <!-- Title & Platform -->
             <h3 class="text-lg font-bold text-white tracking-tight">${escapeHtml(app.title)}</h3>
             <div class="flex items-center gap-3 text-xs text-zd-muted mt-1 mb-3">
               <span><i class="fa-solid fa-layer-group text-zd-cyan/80 mr-1"></i>${escapeHtml(app.platform)}</span>
@@ -970,26 +623,24 @@
               <span><i class="fa-solid fa-hard-drive text-zd-blue/80 mr-1"></i>${escapeHtml(app.size)}</span>
             </div>
 
-            <!-- Description -->
             <p class="text-sm text-zd-silver/85 leading-relaxed line-clamp-3 mb-5">
               ${escapeHtml(app.shortDesc)}
             </p>
           </div>
 
-          <!-- Footer Actions -->
           <div class="pt-4 border-t border-zd-border/70 space-y-3">
             <div class="flex items-center justify-between text-xs text-zd-muted">
               <span class="flex items-center gap-1 text-amber-400 font-medium">
                 <i class="fa-solid fa-star"></i> ${escapeHtml(app.rating || '5.0')}
               </span>
-              <span><i class="fa-solid fa-download mr-1 text-zd-cyan"></i>${app.downloads} descargas</span>
+              <span><i class="fa-brands fa-github mr-1 text-zd-cyan"></i>${escapeHtml(app.category)}</span>
             </div>
 
             <div class="grid grid-cols-2 gap-2.5">
-              <button onclick="openDetailsModal('${app.id}')" class="px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-zd-surface hover:bg-zd-bg text-zd-silver hover:text-white border border-zd-border transition-colors">
+              <button onclick="openDetailsModal('${escapeHtml(app.id)}')" class="px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-zd-surface hover:bg-zd-bg text-zd-silver hover:text-white border border-zd-border transition-colors">
                 Ver Detalles
               </button>
-              <button onclick="startDownload('${app.id}')" class="px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-zd-cyan to-zd-blue text-zd-bg hover:shadow-cyan-glow transition-all flex items-center justify-center gap-1.5">
+              <button onclick="startDownload('${escapeHtml(app.id)}')" class="px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-zd-cyan to-zd-blue text-zd-bg hover:shadow-cyan-glow transition-all flex items-center justify-center gap-1.5">
                 <i class="fa-solid fa-download"></i>
                 <span>Descargar</span>
               </button>
@@ -999,7 +650,6 @@
       `).join('');
     }
 
-    // Open App Details Modal
     function openDetailsModal(appId) {
       const app = apps.find(a => a.id === appId);
       if (!app) return;
@@ -1016,10 +666,10 @@
                 <h3 class="text-xl sm:text-2xl font-extrabold text-white">${escapeHtml(app.title)}</h3>
                 <span class="px-2.5 py-0.5 rounded-md bg-zd-cyan/15 text-zd-cyan font-mono text-xs">${escapeHtml(app.version)}</span>
               </div>
-              <p class="text-xs text-zd-muted mt-1">${escapeHtml(app.platform)} • Tamaño: ${escapeHtml(app.size)} • ${app.downloads} descargas</p>
+              <p class="text-xs text-zd-muted mt-1">${escapeHtml(app.platform)} • Tamaño: ${escapeHtml(app.size)}</p>
             </div>
           </div>
-          <button onclick="closeDetailsModal()" class="p-2 rounded-xl text-zd-muted hover:text-white hover:bg-zd-card">
+          <button onclick="closeDetailsModal()" aria-label="Cerrar" class="p-2 rounded-xl text-zd-muted hover:text-white hover:bg-zd-card">
             <i class="fa-solid fa-xmark text-lg"></i>
           </button>
         </div>
@@ -1053,18 +703,12 @@
             </div>
           </div>
 
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-zd-border">
-            <button onclick="deleteApp('${app.id}')" class="text-xs text-rose-400 hover:text-rose-300 flex items-center gap-1.5 self-start sm:self-auto">
-              <i class="fa-solid fa-trash-can"></i>
-              <span>Eliminar aplicación</span>
+          <div class="flex items-center justify-end gap-3 pt-4 border-t border-zd-border">
+            <button onclick="closeDetailsModal()" class="px-4 py-2.5 rounded-xl text-xs font-medium text-zd-muted hover:text-white">Cerrar</button>
+            <button onclick="closeDetailsModal(); startDownload('${escapeHtml(app.id)}')" class="px-6 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-zd-cyan to-zd-blue text-zd-bg hover:shadow-cyan-glow flex items-center gap-2">
+              <i class="fa-solid fa-download"></i>
+              <span>Descargar (${escapeHtml(app.size)})</span>
             </button>
-            <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
-              <button onclick="closeDetailsModal()" class="px-4 py-2.5 rounded-xl text-xs font-medium text-zd-muted hover:text-white">Cerrar</button>
-              <button onclick="closeDetailsModal(); startDownload('${app.id}')" class="px-6 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-zd-cyan to-zd-blue text-zd-bg hover:shadow-cyan-glow flex items-center gap-2">
-                <i class="fa-solid fa-download"></i>
-                <span>Descargar (${escapeHtml(app.size)})</span>
-              </button>
-            </div>
           </div>
         </div>
       `;
@@ -1080,288 +724,97 @@
       modal.classList.remove('flex');
     }
 
-    // Real download trigger + server refresh
-    let dlInterval = null;
-    async function startDownload(appId) {
+    function startDownload(appId) {
       const app = apps.find(a => a.id === appId);
       if (!app) return;
 
-      // Compute or display SHA-256 hash
-      currentHash = app.sha256 && app.sha256.length >= 16
-        ? app.sha256
-        : Array.from({ length: 64 }, (_, i) => ((app.title.charCodeAt(i % app.title.length) + i * 17) % 16).toString(16)).join('');
+      const hashBox = document.getElementById('dlHashBox');
+      if (app.sha256 && app.sha256.trim().length > 0) {
+        currentHash = app.sha256.trim();
+        document.getElementById('dlHashText').textContent = currentHash;
+        hashBox.classList.remove('hidden');
+      } else {
+        currentHash = '';
+        hashBox.classList.add('hidden');
+      }
 
       document.getElementById('dlAppName').textContent = app.title;
       document.getElementById('dlFileMeta').textContent = `${app.platform} • ${app.version} • ${app.size}`;
-      document.getElementById('dlHashText').textContent = currentHash;
 
       const bar = document.getElementById('dlProgressBar');
       const percent = document.getElementById('dlPercentText');
       const status = document.getElementById('dlStatusText');
       const icon = document.getElementById('dlIcon');
 
-      bar.style.width = '15%';
-      percent.textContent = '15%';
-      status.textContent = 'Solicitando descarga a ZenticDrake...';
+      bar.style.width = '25%';
+      percent.textContent = '25%';
+      status.textContent = 'Conectando con GitHub Releases...';
       icon.className = 'fa-solid fa-cloud-arrow-down animate-bounce';
 
       const modal = document.getElementById('downloadModal');
       modal.classList.remove('hidden');
       modal.classList.add('flex');
 
-      const targetUrl = app.downloadUrl || `/download/${app.id}`;
-
-      if (isBackendConnected) {
-        try {
-          bar.style.width = '65%';
-          percent.textContent = '65%';
-          status.textContent = 'Iniciando transferencia desde el servidor...';
-
-          // Trigger real browser download or external link
-          const link = document.createElement('a');
-          link.href = targetUrl;
-          if (!targetUrl.startsWith('http')) {
-            link.setAttribute('download', '');
-          } else {
-            link.target = '_blank';
-            link.rel = 'noopener noreferrer';
-          }
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-
-          // Wait briefly so Flask increments the counter before refreshing /api/apps
-          setTimeout(async () => {
-            await fetchAppsFromBackend();
-            bar.style.width = '100%';
-            percent.textContent = '100%';
-            icon.className = 'fa-solid fa-circle-check text-emerald-400';
-            status.textContent = '¡Descarga iniciada y contador actualizado!';
-          }, 700);
-        } catch (err) {
-          icon.className = 'fa-solid fa-triangle-exclamation text-amber-400';
-          status.textContent = 'No se pudo completar la descarga desde el servidor.';
-        }
-        return;
-      }
-
-      // Offline / standalone fallback when Flask server is not running
-      app.downloads = (Number(app.downloads) || 0) + 1;
-      saveAppsToStorage();
-      renderApps();
-
       if (dlInterval) clearInterval(dlInterval);
-      let progress = 20;
+      let progress = 25;
 
       dlInterval = setInterval(() => {
-        progress += 25;
+        progress += 35;
         if (progress >= 100) {
           progress = 100;
           clearInterval(dlInterval);
           bar.style.width = '100%';
           percent.textContent = '100%';
-          icon.className = 'fa-solid fa-circle-check text-emerald-400';
 
-          if (app.downloadUrl && app.downloadUrl.startsWith('http')) {
-            status.textContent = 'Abriendo enlace de descarga...';
-            window.open(app.downloadUrl, '_blank', 'noopener noreferrer');
+          if (app.downloadUrl && /^https?:\/\//i.test(app.downloadUrl)) {
+            icon.className = 'fa-solid fa-circle-check text-emerald-400';
+            status.textContent = 'Redirigiendo a la descarga en GitHub...';
+            window.open(app.downloadUrl, '_blank', 'noopener,noreferrer');
           } else {
-            status.textContent = 'Descarga local de demostración completada.';
-            triggerVirtualReleaseNote(app);
+            icon.className = 'fa-solid fa-circle-info text-amber-400';
+            status.textContent = 'Enlace de descarga no disponible todavía.';
           }
         } else {
           bar.style.width = progress + '%';
           percent.textContent = progress + '%';
-          status.textContent = 'Preparando paquete local...';
         }
-      }, 180);
+      }, 150);
     }
 
-    // Generates a lightweight release info text file download when running standalone without Flask
-    async function handleAddNewApp(e) {
-      e.preventDefault();
-      const adminPassword = document.getElementById('devAdminPassword').value;
-      const title = document.getElementById('newAppTitle').value.trim();
-      const version = document.getElementById('newAppVersion').value.trim();
-      const category = document.getElementById('newAppCategory').value;
-      const platform = document.getElementById('newAppPlatform').value.trim();
-      const size = document.getElementById('newAppSize').value.trim() || 'Archivo';
-      const fileInput = document.getElementById('newAppFile');
-      const selectedFile = fileInput.files && fileInput.files[0] ? fileInput.files[0] : null;
-      const downloadUrl = document.getElementById('newAppUrl').value.trim();
-      const shortDesc = document.getElementById('newAppDesc').value.trim();
-      const requirements = document.getElementById('newAppRequirements').value.trim() || `Compatible con ${platform}`;
-      const featuresRaw = document.getElementById('newAppFeatures').value.trim();
-
-      const features = featuresRaw
-        ? featuresRaw.split(/[\n,]+/).map(f => f.trim()).filter(Boolean)
-        : ['Interfaz moderna estilo ZenticDrake', 'Optimizada para máximo rendimiento', 'Desarrollada en Cuba'];
-
-      sessionStorage.setItem('zenticdrake_admin_pass', adminPassword);
-
-      const submitBtn = document.getElementById('devSubmitBtn');
-      const originalBtnHtml = submitBtn.innerHTML;
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1.5"></i>Publicando...';
-
-      try {
-        const formData = new FormData();
-        formData.append('name', title);
-        formData.append('title', title);
-        formData.append('version', version);
-        formData.append('category', category);
-        formData.append('platform', platform);
-        formData.append('size', size);
-        formData.append('description', shortDesc);
-        formData.append('requirements', requirements);
-        formData.append('changelog', features.join('\n'));
-        if (downloadUrl) {
-          formData.append('downloadUrl', downloadUrl);
-        }
-        if (selectedFile) {
-          formData.append('file', selectedFile);
-        }
-
-        const res = await fetch('/api/apps', {
-          method: 'POST',
-          headers: {
-            'X-Admin-Password': adminPassword
-          },
-          body: formData
-        });
-
-        const payload = await res.json().catch(() => ({}));
-
-        if (!res.ok) {
-          showToast(payload.error || `Error al publicar (${res.status}). Verifica la contraseña.`);
-          return;
-        }
-
-        await fetchAppsFromBackend();
-        closeDevModal();
-        fileInput.value = '';
-        document.getElementById('newAppTitle').value = '';
-        document.getElementById('newAppUrl').value = '';
-        document.getElementById('newAppDesc').value = '';
-        document.getElementById('newAppRequirements').value = '';
-        document.getElementById('newAppFeatures').value = '';
-        showToast(`¡"${title}" publicada en tu servidor ZenticDrake!`);
-      } catch (err) {
-        // Fallback when opened without a running backend
-        const iconMap = {
-          'Móvil': 'fa-mobile-screen-button',
-          'Web': 'fa-globe',
-          'Desktop': 'fa-laptop-code'
-        };
-
-        const localNewApp = normalizeApp({
-          id: 'app-' + Date.now(),
-          title,
-          version,
-          category,
-          platform,
-          size: selectedFile ? `${(selectedFile.size / (1024 * 1024)).toFixed(2)} MB` : size,
-          rating: '5.0',
-          downloads: 0,
-          icon: iconMap[category] || 'fa-dragon',
-          accent: 'from-zd-cyan to-zd-blue',
-          isDemo: false,
-          downloadUrl: downloadUrl || '',
-          shortDesc,
-          fullDesc: shortDesc,
-          features,
-          requirements,
-          changelog: features.join(' • ')
-        });
-
-        apps.unshift(localNewApp);
-        saveAppsToStorage();
-        renderApps();
-        closeDevModal();
-        showToast('Servidor no detectado: app guardada en almacenamiento local.');
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnHtml;
-      }
-    }
-
-    async function deleteApp(appId) {
-      const app = apps.find(a => a.id === appId);
-      const appTitle = app ? app.title : 'la aplicación';
-
-      if (isBackendConnected) {
-        const cachedPass = sessionStorage.getItem('zenticdrake_admin_pass') || '';
-        const passwordInput = prompt(`Ingresa tu contraseña de administrador para eliminar "${appTitle}":`, cachedPass);
-        if (passwordInput === null) return;
-        sessionStorage.setItem('zenticdrake_admin_pass', passwordInput);
-
-        try {
-          const res = await fetch(`/api/apps/${encodeURIComponent(appId)}`, {
-            method: 'DELETE',
-            headers: {
-              'X-Admin-Password': passwordInput
-            }
-          });
-          const payload = await res.json().catch(() => ({}));
-          if (!res.ok) {
-            showToast(payload.error || 'No se pudo eliminar (contraseña incorrecta o error).');
-            return;
-          }
-          await fetchAppsFromBackend();
-          closeDetailsModal();
-          showToast(`"${appTitle}" eliminada del servidor.`);
-          return;
-        } catch (err) {
-          showToast('Error de red al intentar eliminar en el servidor.');
-          return;
-        }
-      }
-
-      apps = apps.filter(a => a.id !== appId);
-      saveAppsToStorage();
-      renderApps();
-      closeDetailsModal();
-      showToast('Aplicación eliminada del catálogo local.');
-    }
-
-    // Creator Name Customization
-    function openCreatorModal() {
-      const current = document.getElementById('creatorNameDisplay').textContent;
-      document.getElementById('creatorNameInput').value = current === '[Tu Nombre]' ? '' : current;
-      const modal = document.getElementById('creatorModal');
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    }
-
-    function closeCreatorModal() {
-      const modal = document.getElementById('creatorModal');
+    function closeDownloadModal() {
+      if (dlInterval) clearInterval(dlInterval);
+      const modal = document.getElementById('downloadModal');
       modal.classList.add('hidden');
       modal.classList.remove('flex');
     }
 
-    function saveCreatorName() {
-      const val = document.getElementById('creatorNameInput').value.trim();
-      const finalName = val || '[Tu Nombre]';
-      document.getElementById('creatorNameDisplay').textContent = finalName;
-      localStorage.setItem('zenticdrake_creator', finalName);
-      closeCreatorModal();
-      showToast('Nombre del creador actualizado.');
+    function copyHash() {
+      if (!currentHash) return;
+      navigator.clipboard?.writeText(currentHash);
+      showToast('Hash SHA-256 copiado al portapapeles.');
     }
 
-    // Contact form submission
     function handleContactSubmit(e) {
       e.preventDefault();
-      e.target.reset();
-      showToast('¡Mensaje enviado! Gracias por contactar con ZenticDrake.');
+      const form = e.target;
+      const name = form.querySelector('input[type="text"]').value.trim();
+      const select = form.querySelector('select');
+      const reason = select.options[select.selectedIndex].text;
+      const message = form.querySelector('textarea').value.trim();
+
+      const subject = encodeURIComponent(`[ZenticDrake] ${reason} - ${name}`);
+      const body = encodeURIComponent(`Nombre: ${name}\nMotivo: ${reason}\n\nMensaje:\n${message}`);
+      window.location.href = `mailto:ZenticDrake@gmail.com?subject=${subject}&body=${body}`;
+
+      form.reset();
+      showToast('Abriendo tu cliente de correo para enviar el mensaje.');
     }
 
-    // Mobile Menu Toggle
     function toggleMobileMenu() {
       const menu = document.getElementById('mobileMenu');
       menu.classList.toggle('hidden');
     }
 
-    // Toast notification helper
     let toastTimeout = null;
     function showToast(msg) {
       const toast = document.getElementById('toast');
@@ -1375,7 +828,19 @@
       }, 3500);
     }
 
-    // Escape HTML to prevent XSS on custom inputs
+    // Cerrar modales al hacer clic fuera del contenido o presionar Escape
+    window.addEventListener('click', (e) => {
+      if (e.target === document.getElementById('detailsModal')) closeDetailsModal();
+      if (e.target === document.getElementById('downloadModal')) closeDownloadModal();
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeDetailsModal();
+        closeDownloadModal();
+      }
+    });
+
     function escapeHtml(str) {
       if (str === null || str === undefined) return '';
       return String(str)
